@@ -1,100 +1,165 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - MDA</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="m-0 p-0 font-['Roboto',sans-serif] text-[#333]">
     <!-- Header -->
-    <header>
-      <nav>
+    <header class="sticky top-0 w-full box-border z-99">
+      <nav
+        class="bg-white flex flex-col md:flex-row justify-between items-center py-3.75 px-5 md:px-12.5 shadow-[1px_1px_10px_gray] gap-3.75 md:gap-0"
+      >
         <div class="logo">
-          <img src="./Assets/image/Logo.png" alt="Logo Header" />
+          <img src="./Assets/image/Logo.png" alt="Logo Header" class="w-50" />
         </div>
         <div class="nav-menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#aboutme">About Me</a></li>
+          <ul
+            class="flex flex-wrap justify-center gap-5 md:gap-12.5 list-none m-0 p-0"
+          >
+            <li>
+              <a
+                href="#home"
+                class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors duration-300"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#aboutme"
+                class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors duration-300"
+                >About Me</a
+              >
+            </li>
           </ul>
         </div>
         <div class="button-header">
-          <a href="#contact">Contact Me</a>
+          <a
+            href="#contact"
+            class="inline-block no-underline bg-white text-[#ff8c00] text-[17px] border border-[#ff8c00] py-3.75 px-5 rounded-[5px] cursor-pointer hover:bg-[#ff8c00] hover:text-white transition-all duration-300"
+            >Contact Me</a
+          >
         </div>
       </nav>
     </header>
 
     <main>
       <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="text-hero">
-          <h6>Hey, I am Muhammad Donald Arthur</h6>
-          <h1>Build Your Dream <span>Website</span> with Top-Notch Quality</h1>
-          <p>
-            I am an experienced web developer <br />
-            ready to help you create a functional website, <br />
+      <section
+        id="home"
+        class="bg-[#fffaf5] flex flex-col lg:flex-row items-center justify-between gap-7.5 px-5 md:px-[8%] py-12.5 lg:py-15 w-full min-h-[85vh] box-border overflow-hidden text-center lg:text-left"
+      >
+        <div class="flex-[0.9] max-w-130">
+          <h6 class="font-bold text-[18px] mb-5">
+            Hey, I am Muhammad Donald Arthur
+          </h6>
+          <h1
+            class="font-black text-[40px] lg:text-[52px] leading-[1.2] my-2.5"
+          >
+            Build Your Dream <span class="text-[#ff8c00]">Website</span> with
+            Top-Notch Quality
+          </h1>
+          <p class="my-6.25 text-[18px] font-[450] leading-6.5">
+            I am an experienced web developer <br class="hidden lg:block" />
+            ready to help you create a functional website,
+            <br class="hidden lg:block" />
             aesthetic, and optimal for all your digital needs.
           </p>
-          <a href="#contact" class="button1">Get In Touch</a>
+          <a
+            href="#contact"
+            class="inline-block no-underline text-[15px] mt-2.5 py-4.25 px-7 bg-[#ff8c00] text-white rounded-[5px] hover:bg-[#cc7000] transition-colors duration-300"
+            >Get In Touch</a
+          >
         </div>
-        <div class="image-hero">
-          <img src="./Assets/image/image-hero.png" alt="Image Hero Section" />
+        <div
+          class="flex-[1.3] flex justify-center lg:justify-end items-center mt-10 lg:mt-0"
+        >
+          <img
+            src="./Assets/image/image-hero.png"
+            alt="Image Hero Section"
+            class="w-full max-w-full h-auto object-contain scale-[1.08]"
+          />
         </div>
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="skills">
-        <div class="text-skills">
-          <p>My Skills</p>
-          <h2>My Expertise</h2>
+      <section id="skills" class="w-full box-border pb-12.5">
+        <div class="pt-12.5 lg:pt-25 px-5 lg:px-12.5 pb-7.5">
+          <p class="text-[15px] font-bold m-0">My Skills</p>
+          <h2 class="text-[45px] font-bold mt-2.5">My Expertise</h2>
         </div>
-        <div class="card-skills">
-          <article class="skill-card">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-12.5 px-5 lg:px-12.5 flex-wrap"
+        >
+          <!-- Skill Card 1 -->
+          <article
+            class="flex-1 w-full lg:w-auto min-w-62.5 max-w-full lg:max-w-87.5 h-62.5 bg-[#fffaf5] rounded-lg p-7.5 shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-2.5 hover:shadow-[0_12px_24px_rgba(0,0,0,0.2),0_5px_0_0_#ff8c00] transition-all duration-300 flex flex-col items-start box-border"
+          >
             <img
               src="./Assets/image/Strategy & Direction.png"
               alt="Logo Strategy & Direction"
+              class="w-13.75 h-13.75 object-contain mb-5"
             />
-            <h2>Strategy & Direction</h2>
-            <p>
+            <h2 class="text-[20px] m-0 mb-2.5">Strategy & Direction</h2>
+            <p class="text-[17px] m-0 leading-normal">
               Planning an effective digital strategy to achieve your business
               goals.
             </p>
           </article>
-          <article class="skill-card">
+          <!-- Skill Card 2 -->
+          <article
+            class="flex-1 w-full lg:w-auto min-w-62.5 max-w-full lg:max-w-87.5 h-62.5 bg-[#fffaf5] rounded-lg p-7.5 shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-2.5 hover:shadow-[0_12px_24px_rgba(0,0,0,0.2),0_5px_0_0_#ff8c00] transition-all duration-300 flex flex-col items-start box-border"
+          >
             <img
               src="./Assets/image/Branding & Logo.png"
               alt="Logo Branding & Logo"
+              class="w-13.75 h-13.75 object-contain mb-5"
             />
-            <h2>Branding & Logo</h2>
-            <p>
+            <h2 class="text-[20px] m-0 mb-2.5">Branding & Logo</h2>
+            <p class="text-[17px] m-0 leading-normal">
               Creating a strong visual identity and a memorable logo for your
               brand.
             </p>
           </article>
-          <article class="skill-card">
+          <!-- Skill Card 3 -->
+          <article
+            class="flex-1 w-full lg:w-auto min-w-62.5 max-w-full lg:max-w-87.5 h-62.5 bg-[#fffaf5] rounded-lg p-7.5 shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-2.5 hover:shadow-[0_12px_24px_rgba(0,0,0,0.2),0_5px_0_0_#ff8c00] transition-all duration-300 flex flex-col items-start box-border"
+          >
             <img
               src="./Assets/image/UI & UX Design.png"
               alt="Logo UI & UX Design"
+              class="w-13.75 h-13.75 object-contain mb-5"
             />
-            <h2>UI & UX Design</h2>
-            <p>
+            <h2 class="text-[20px] m-0 mb-2.5">UI & UX Design</h2>
+            <p class="text-[17px] m-0 leading-normal">
               Creating attractive and innovative designs to enhance the user
               experience.
             </p>
           </article>
-          <article class="skill-card">
+          <!-- Skill Card 4 -->
+          <article
+            class="flex-1 w-full lg:w-auto min-w-62.5 max-w-full lg:max-w-87.5 h-62.5 bg-[#fffaf5] rounded-lg p-7.5 shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-2.5 hover:shadow-[0_12px_24px_rgba(0,0,0,0.2),0_5px_0_0_#ff8c00] transition-all duration-300 flex flex-col items-start box-border"
+          >
             <img
               src="./Assets/image/Webflow Development.png"
               alt="Logo Webflow Development"
+              class="w-13.75 h-13.75 object-contain mb-5"
             />
-            <h2>Webflow Development</h2>
-            <p>
+            <h2 class="text-[20px] m-0 mb-2.5">Webflow Development</h2>
+            <p class="text-[17px] m-0 leading-normal">
               Developing engaging, responsive, and functional websites using the
               latest technologies.
             </p>
@@ -103,14 +168,23 @@
       </section>
 
       <!-- About Me Section -->
-      <section id="aboutme" class="about">
-        <div class="image-about">
-          <img src="./Assets/image/image-about.png" alt="Image About Me" />
+      <section
+        id="aboutme"
+        class="flex flex-col lg:flex-row items-center justify-between gap-12.5 px-5 md:px-[8%] py-12.5 lg:py-25 w-full box-border overflow-hidden text-center lg:text-left"
+      >
+        <div
+          class="flex-[1.3] flex justify-center items-center w-full lg:w-225 h-auto"
+        >
+          <img
+            src="./Assets/image/image-about.png"
+            alt="Image About Me"
+            class="max-w-full lg:max-w-187.5 h-auto object-contain scale-100 lg:scale-[1.1]"
+          />
         </div>
-        <div class="text-about">
-          <h6>About</h6>
-          <h2>About Me</h2>
-          <p>
+        <div class="flex-1 max-w-145">
+          <h6 class="text-[17px] font-bold mb-4">About</h6>
+          <h2 class="text-[45px] font-bold my-2.5">About Me</h2>
+          <p class="pt-7.5 text-[19px] leading-[1.6]">
             Hello, my name is Muhammad Donald Arthur. I am an experienced web
             developer with over 2 years of experience in designing and
             developing websites for various industries.
@@ -124,86 +198,117 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="project-portfolio">
-        <div class="text-button">
-          <div class="text-portfolio">
-            <h6>Recent Projects</h6>
-            <h2>My Portfolio</h2>
+      <section id="portfolio" class="w-full box-border">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between px-5 md:px-12.5 mb-10 text-center md:text-left gap-5"
+        >
+          <div>
+            <h6 class="text-[17px] font-bold mb-4.5">Recent Projects</h6>
+            <h2 class="text-[45px] font-bold m-0">My Portfolio</h2>
           </div>
-          <div class="button-portfolio">
-            <button>
+          <div>
+            <button
+              class="flex items-center font-medium text-[18px] bg-[#ff8c00] text-white py-3.75 px-5 rounded-[10px] cursor-pointer border-none hover:bg-[#cc7000] transition-colors duration-300"
+            >
               <img
                 src="./Assets/image/Visit My Dribbble.png"
                 alt="Logo Visit My Dribbble"
+                class="w-7.5 pr-2.5"
               />
               Visit My Dribbble
             </button>
           </div>
         </div>
 
-        <div class="card-project">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-12.5 px-5 md:px-12.5 mb-25 flex-wrap"
+        >
           <!-- Project 1 -->
-          <article class="project-card">
+          <article
+            class="w-full lg:w-107.5 h-auto lg:h-127.5 pb-5 lg:pb-0 bg-white rounded-lg shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1.25 transition-transform duration-300"
+          >
             <img
               src="./Assets/image/Ahuse.png"
               alt="Image E-Commerce"
-              class="project-img"
+              class="rounded-t-lg w-full h-70 object-cover"
             />
-            <div class="text-project">
-              <h2>E-Commerce Website</h2>
-              <p>
+            <div class="p-[30px_20px]">
+              <h2 class="text-[25px] font-bold m-0">E-Commerce Website</h2>
+              <p class="text-[17px] font-medium mt-3.75">
                 E-commerce website with a user-friendly interface and secure
                 payment features.
               </p>
-              <button>
+              <button
+                class="group relative inline-flex items-center border-none mt-5 text-[17px] font-semibold bg-transparent cursor-pointer pb-1.25"
+              >
                 View In Dribbble
                 <img
                   src="./Assets/image/View In Dribbble.png"
                   alt="Logo View In Dribbble"
+                  class="w-4.25 ml-2"
                 />
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ff8c00] transition-all duration-400 ease-in-out group-hover:w-full"
+                ></span>
               </button>
             </div>
           </article>
           <!-- Project 2 -->
-          <article class="project-card">
+          <article
+            class="w-full lg:w-107.5 h-auto lg:h-127.5 pb-5 lg:pb-0 bg-white rounded-lg shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1.25 transition-transform duration-300"
+          >
             <img
               src="./Assets/image/App Dashboard.png"
               alt="Image App Dashboard"
-              class="project-img"
+              class="rounded-t-lg w-full h-70 object-cover"
             />
-            <div class="text-project">
-              <h2>Personal Portfolio App</h2>
-              <p>
+            <div class="p-[30px_20px]">
+              <h2 class="text-[25px] font-bold m-0">Personal Portfolio App</h2>
+              <p class="text-[17px] font-medium mt-3.75">
                 Interactive portfolio to showcase projects and work experience.
               </p>
-              <button>
+              <button
+                class="group relative inline-flex items-center border-none mt-5 text-[17px] font-semibold bg-transparent cursor-pointer pb-1.25"
+              >
                 View In Dribbble
                 <img
                   src="./Assets/image/View In Dribbble.png"
                   alt="Logo View In Dribbble"
+                  class="w-4.25 ml-2"
                 />
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ff8c00] transition-all duration-400 ease-in-out group-hover:w-full"
+                ></span>
               </button>
             </div>
           </article>
           <!-- Project 3 -->
-          <article class="project-card">
+          <article
+            class="w-full lg:w-107.5 h-auto lg:h-127.5 pb-5 lg:pb-0 bg-white rounded-lg shadow-[5px_5px_10px_0px_rgba(0,0,0,0.2)] hover:-translate-y-1.25 transition-transform duration-300"
+          >
             <img
               src="./Assets/image/Easy Rent.png"
               alt="Image Easy Rent"
-              class="project-img"
+              class="rounded-t-lg w-full h-70 object-cover"
             />
-            <div class="text-project">
-              <h2>Personal Blog</h2>
-              <p>
+            <div class="p-[30px_20px]">
+              <h2 class="text-[25px] font-bold m-0">Personal Blog</h2>
+              <p class="text-[17px] font-medium mt-3.75">
                 A personal blog for sharing articles and tutorials on web
                 development.
               </p>
-              <button>
+              <button
+                class="group relative inline-flex items-center border-none mt-5 text-[17px] font-semibold bg-transparent cursor-pointer pb-1.25"
+              >
                 View In Dribbble
                 <img
                   src="./Assets/image/View In Dribbble.png"
                   alt="Logo View In Dribbble"
+                  class="w-4.25 ml-2"
                 />
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ff8c00] transition-all duration-400 ease-in-out group-hover:w-full"
+                ></span>
               </button>
             </div>
           </article>
@@ -211,41 +316,79 @@
       </section>
 
       <!-- Contact Me Section -->
-      <section id="contact" class="contact">
-        <div class="text-contact">
-          <p>Get In Touch</p>
-          <h1>Contact me</h1>
+      <section
+        id="contact"
+        class="max-w-225 my-12.5 lg:my-25 mx-auto px-5 lg:px-5"
+      >
+        <div class="text-center mb-12.5">
+          <p class="text-[20px] font-medium m-0">Get In Touch</p>
+          <h1 class="text-[50px] font-bold text-[#333] mt-2.5 mb-5">
+            Contact me
+          </h1>
           <p>
             Feel free to reach out for collaborations or just a friendly hello.
           </p>
         </div>
 
         <form>
-          <div class="flex">
-            <div class="form">
-              <label for="first-name">First name</label>
-              <input type="text" id="first-name" required />
+          <div class="flex flex-col md:flex-row gap-0 md:gap-12.5">
+            <div class="flex-1 mb-6.25">
+              <label for="first-name" class="block mb-2 text-[#333] font-medium"
+                >First name</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                required
+                class="w-full p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
+              />
             </div>
-            <div class="form">
-              <label for="last-name">Last name</label>
-              <input type="text" id="last-name" required />
+            <div class="flex-1 mb-6.25">
+              <label for="last-name" class="block mb-2 text-[#333] font-medium"
+                >Last name</label
+              >
+              <input
+                type="text"
+                id="last-name"
+                required
+                class="w-full p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
+              />
             </div>
           </div>
 
-          <div class="flex">
-            <div class="form">
-              <label for="email">Email</label>
-              <input type="email" id="email" required />
+          <div class="flex flex-col md:flex-row gap-0 md:gap-12.5">
+            <div class="flex-1 mb-6.25">
+              <label for="email" class="block mb-2 text-[#333] font-medium"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                required
+                class="w-full p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
+              />
             </div>
-            <div class="form">
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" />
+            <div class="flex-1 mb-6.25">
+              <label for="phone" class="block mb-2 text-[#333] font-medium"
+                >Phone number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                class="w-full p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
+              />
             </div>
           </div>
 
-          <div class="form">
-            <label for="topic">Choose a topic</label>
-            <select id="topic" required>
+          <div class="mb-6.25">
+            <label for="topic" class="block mb-2 text-[#333] font-medium"
+              >Choose a topic</label
+            >
+            <select
+              id="topic"
+              required
+              class="w-full p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
+            >
               <option value="" disabled selected>Select one...</option>
               <option value="general">Question</option>
               <option value="feedback">Feedback</option>
@@ -253,77 +396,147 @@
             </select>
           </div>
 
-          <div class="form">
-            <label for="message">Message</label>
+          <div class="mb-6.25">
+            <label for="message" class="block mb-2 text-[#333] font-medium"
+              >Message</label
+            >
             <textarea
               id="message"
               placeholder="Type your message..."
               required
+              class="w-full h-30 resize-y p-3 border border-[#ff8c00] rounded-sm text-[16px] box-border font-inherit focus:outline-none focus:shadow-[0_0_5px_rgba(255,140,0,0.5)]"
             ></textarea>
           </div>
 
-          <div class="checkbox">
-            <input type="checkbox" id="terms" required />
-            <label for="terms">I accept the terms</label>
+          <div class="flex items-start mb-6.25">
+            <input
+              type="checkbox"
+              id="terms"
+              required
+              class="w-auto mr-2.5 mt-0.75"
+            />
+            <label for="terms" class="font-normal mb-0"
+              >I accept the terms</label
+            >
           </div>
 
-          <div class="button-submit">
-            <button type="submit">Submit</button>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-[#ff8c00] text-white border-none rounded-sm py-3 px-6 text-[16px] cursor-pointer hover:bg-[#cc7000] transition-colors duration-300"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="navbar-footer">
+    <footer class="bg-[#fffaf5] p-[50px_20px] lg:p-[100px_50px]">
+      <div class="max-w-350 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center pb-12.5 gap-7.5 lg:gap-0 text-center lg:text-left"
+        >
           <div class="footer-logo">
-            <img src="./Assets/image/Logo.png" alt="Logo Footer" />
+            <img src="./Assets/image/Logo.png" alt="Logo Footer" class="w-50" />
           </div>
 
           <div class="nav-menu-footer">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#aboutme">About Me</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul
+              class="flex flex-wrap justify-center gap-3.75 lg:gap-12.5 list-none m-0 p-0"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#aboutme"
+                  class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-[18px] font-normal text-[#333] no-underline hover:text-[#ff8c00] transition-colors"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
 
-          <div class="logo-footer">
-            <!-- Social Links -->
-            <div class="logo-social">
-              <a href="#"
-                ><img src="./Assets/image/Facebook.png" alt="Logo Facebook"
-              /></a>
-            </div>
-            <div class="logo-social">
-              <a href="https://www.instagram.com/mhd_arthe" target="_blank">
-                <img src="./Assets/image/Instagram.png" alt="Logo Instagram" />
-              </a>
-            </div>
-            <div class="logo-social">
-              <a href="https://github.com/mhd0322" target="_blank">
-                <img src="./Assets/image/GitHub.png" alt="Logo GitHub" />
-              </a>
-            </div>
-            <div class="logo-social">
-              <a href="#"
-                ><img src="./Assets/image/LinkedIn.png" alt="Logo LinkedIn"
-              /></a>
-            </div>
+          <div class="flex gap-5 justify-center">
+            <a
+              href="#"
+              class="hover:scale-110 transition-transform duration-300"
+              ><img
+                src="./Assets/image/Facebook.png"
+                alt="Logo Facebook"
+                class="w-7.5"
+            /></a>
+            <a
+              href="https://www.instagram.com/mhd_arthe"
+              target="_blank"
+              class="hover:scale-110 transition-transform duration-300"
+              ><img
+                src="./Assets/image/Instagram.png"
+                alt="Logo Instagram"
+                class="w-7.5"
+            /></a>
+            <a
+              href="https://github.com/mhd0322"
+              target="_blank"
+              class="hover:scale-110 transition-transform duration-300"
+              ><img
+                src="./Assets/image/GitHub.png"
+                alt="Logo GitHub"
+                class="w-7.5"
+            /></a>
+            <a
+              href="#"
+              class="hover:scale-110 transition-transform duration-300"
+              ><img
+                src="./Assets/image/LinkedIn.png"
+                alt="Logo LinkedIn"
+                class="w-7.5"
+            /></a>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div class="made-by">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center pt-12.5 border-t-2 border-[#333] text-[14px] flex-wrap gap-5 text-center lg:text-left"
+        >
+          <div class="text-[16px] font-medium text-black">
             Copyright &copy; 2026 Muhammad Donald Arthur. All rights reserved.
           </div>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies Settings</a>
+          <div class="flex gap-5 justify-center">
+            <a
+              href="#"
+              class="text-[17px] font-normal text-black no-underline hover:text-[#ff8c00] transition-colors duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-[17px] font-normal text-black no-underline hover:text-[#ff8c00] transition-colors duration-300"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-[17px] font-normal text-black no-underline hover:text-[#ff8c00] transition-colors duration-300"
+              >Cookies Settings</a
+            >
           </div>
         </div>
       </div>
